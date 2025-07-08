@@ -1,0 +1,152 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oroboros O₂ Calibration App",
+    "section": "",
+    "text": "Preface\nThis manual is a living document and currently a work in progress. While we aim to provide accurate and helpful guidance, there may still be missing sections, outdated explanations, or features not fully described.\nIf you notice any gaps, have questions, or would like to contribute improvements, please reach out. You can contact me directly\nThank you for your understanding and support while we continue refining this resource.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "The O₂ Calibration App is designed to help Oroboros users visualize and analyze calibration and background oxygen data from DatLab .dld8 files.\nKey features:\n\nFiltering by volume, sensor, medium, annotation period, and date range.\nVisual plots for R0, R1, delta R1, and oxygen slope/residuals.\nCustom annotation support.\nData export and clipboard copying.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "2  Installation",
+    "section": "",
+    "text": "2.1 Windows\nDouble-click the standalone .exe file.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "installation.html#linux",
+    "href": "installation.html#linux",
+    "title": "2  Installation",
+    "section": "2.2 Linux",
+    "text": "2.2 Linux",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "installation.html#macos",
+    "href": "installation.html#macos",
+    "title": "2  Installation",
+    "section": "2.3 MacOS",
+    "text": "2.3 MacOS\nCurrently not supported.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "3  Getting Started",
+    "section": "",
+    "text": "Organize your files into folders: one folder per instrument.\nPlace .dld8 files inside this folder. Other (experimental) files will be ignored.\nLaunch the application.\nSelect your folder containing .dld8 files.\nThe app will parse and load all valid files.\nThe main interface will activate and populate with data.\n\nThe folder is watched for changes. If you add new files later, the app will automatically include them.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "loading-data.html",
+    "href": "loading-data.html",
+    "title": "4  Loading Data",
+    "section": "",
+    "text": "Click the folder icon or go to File &gt; Select Folder. Choose a directory containing .dld8 files.\nThe app will process and prepare plots and tables.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Data</span>"
+    ]
+  },
+  {
+    "objectID": "interface-overview.html",
+    "href": "interface-overview.html",
+    "title": "5  Interface Overview",
+    "section": "",
+    "text": "Toolbar: folder selector, data table, theme toggle, filters, chamber selector.\nTabs:\n\nTab 1: Calibration (R1, ΔR1, R0, R0/R1).\nTab 2: Background (sV).\nTab 3: Background (cV).\n\nFilter Dock: open from the toolbar or menu. Use it to filter by volume, sensor, temperature, or medium.\nData Table: shows per-file metadata and results.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interface Overview</span>"
+    ]
+  },
+  {
+    "objectID": "filtering-options.html",
+    "href": "filtering-options.html",
+    "title": "6  Filtering Options",
+    "section": "",
+    "text": "6.0.1 Time Filters\n\nShows all data in folder by default.\nLast month, 3 months, 6 months\nCustom date range with calendar popup\n\nOpens calendar widget\nOnly allows dates with data\nApplies subset filter and updates plots and table\n\nVisual Indicator:\n\nText label in plots shows active time window\n\n\n\n\n6.0.2 Advanced filters\n\nVolume (e.g., 0.5 mL, 2.0 mL)\nSensor ID\nTemperature\nMedium (“Calibration / Background”)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Filtering Options</span>"
+    ]
+  },
+  {
+    "objectID": "annotations.html",
+    "href": "annotations.html",
+    "title": "7  Working with Annotations",
+    "section": "",
+    "text": "Use annotations to mark QC-relevant events (e.g., sensor cleaning).\nTo Add an Annotation:\n\nOpen the Annotations menu → Add Annotation.\nSelect:\n\nDate and time\nReason (e.g., “Sensor Cleaning”)\nChamber (A or B)\nSensor (or “Not applicable” if it affects all)\nOperator name\n\nConfirm to save. Annotations will be drawn on plots and used to reset ΔR1 calculation.\n\nTo Remove Annotations: Use the Annotations menu → Remove Annotation.\nAnnotations are stored in an annotations.json file within the folder. Do not remove this file unless you want to delete all annotations with intention.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Working with Annotations</span>"
+    ]
+  },
+  {
+    "objectID": "data-table.html",
+    "href": "data-table.html",
+    "title": "8  Data Table",
+    "section": "",
+    "text": "Click “Show Data Table”\nToggle visibility of columns by category\nFilter data by chamber\nExport as .csv\nCopy to clipboard\n\nNote that if any filtering is applied, this will also apply to the data table.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Table</span>"
+    ]
+  },
+  {
+    "objectID": "understanding-plots.html",
+    "href": "understanding-plots.html",
+    "title": "9  Understanding the Plots",
+    "section": "",
+    "text": "9.0.1 Calibration Tab:\n\nR1 plot: absolute values over time.\nΔR1 plot: change in R1 after most recent annotation.\nR0 plot: absolute R0 values.\nR0/R1 ratio: for QC, flags high noise.\nSensors are color-coded.\nHover for tooltip with file/date info.\n\n\n\n9.0.2 Background Tabs (sV and cV):\n\nTop plots: all data in the selected folder.\n\nShows regression line and reference line.\nToggle labels (View button in toolbar) to show J° marks.\n\nBottom plots: selected file only.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Understanding the Plots</span>"
+    ]
+  },
+  {
+    "objectID": "tips-troubleshoot.html",
+    "href": "tips-troubleshoot.html",
+    "title": "10  Tips and Troubleshooting",
+    "section": "",
+    "text": "No data after filtering? Reset filters or expand date range.\nLabel not showing? Ensure plots are visible and annotations are enabled.\nApp crashed? Check logs/app.log for debugging info.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Tips and Troubleshooting</span>"
+    ]
+  },
+  {
+    "objectID": "future-updates.html",
+    "href": "future-updates.html",
+    "title": "11  Getting Started",
+    "section": "",
+    "text": "Launch the application.\nSelect a folder containing .dld8 files.\nThe app will parse and load all valid files.\nThe main interface will activate and populate with data.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "12  Contact",
+    "section": "",
+    "text": "Contact Bente Theeuwes Email support",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Contact</span>"
+    ]
+  }
+]
